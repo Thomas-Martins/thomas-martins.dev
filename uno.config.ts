@@ -45,8 +45,8 @@ export default defineConfig({
     presetWebFonts({
       provider: "google",
       fonts: {
-        sans: "Inter:400,500,600,700,800,900",
-        mono: "Ubuntu: 400,500,600,700,800,900",
+        sans: ["Inter", "Inter:400,500,600,700,800,900"],
+        mono: ["Ubuntu", "Ubuntu:400,500,700"],
       },
     }),
   ],

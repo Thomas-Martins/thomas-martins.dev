@@ -1,3 +1,5 @@
+import react from "@astrojs/react";
+import astroI18next from "astro-i18next";
 import { defineConfig } from "astro/config";
 import UnoCSS from "unocss/astro";
 
@@ -7,5 +9,7 @@ export default defineConfig({
     UnoCSS({
       injectReset: true,
     }),
+    astroI18next(),
+    react(),
   ],
 });

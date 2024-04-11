@@ -1,0 +1,56 @@
+---
+
+---
+
+<button id="toggleButton" class="toggle-btn">
+  <i class="ri-moon-fill"></i>
+</button>
+<script>
+  const storageKey = "theme-preference";
+
+  const getColorPreference = () => {
+    let preference = localStorage.getItem(storageKey);
+    if (!preference) {
+      preference = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    return preference;
+  };
+
+  const setPreference = (themeName: string) => {
+    const root = document.firstElementChild;
+    if (root) {
+      root.setAttribute("data-theme", themeName);
+    }
+    localStorage.setItem(storageKey, themeName);
+  };
+
+  const switchTheme = () => {
+    const currentTheme = getColorPreference();
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    setPreference(newTheme);
+
+    // Mettre à jour l'icône du bouton de thème
+    const icon = document.querySelector("nav button i");
+    const isDark = newTheme === "dark";
+    if (icon) {
+      icon.className = `ri-${isDark ? "sun-fill" : "moon-fill"}`;
+    }
+  };
+
+  (() => {
+    const theme = getColorPreference();
+    setPreference(theme);
+
+    // Mettre à jour l'icône du bouton de thème en fonction du thème actuel
+    const icon = document.querySelector("nav button i");
+    const isDark = theme === "dark";
+    if (icon) {
+      icon.className = `ri-${isDark ? "sun-fill" : "moon-fill"}`;
+    }
+  })();
+
+  const toggleButton = document.getElementById("toggleButton");
+  toggleButton?.addEventListener("click", (e) => {
+    switchTheme();
+  });
+</script>

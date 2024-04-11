@@ -1,0 +1,8 @@
+---
+const { label, icon, className } = Astro.props;
+---
+
+<button class={className}>
+  <i class={`${icon} bg-transparent ri-lg`}></i>
+  {label}
+</button>

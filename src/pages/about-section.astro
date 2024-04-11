@@ -1,0 +1,22 @@
+---
+import { t } from "i18next";
+---
+
+<section class="mt-20">
+  <div class="flex items-center">
+    <h1 class="section-label px-3 py-1.5 rounded-lg">{t("about.title")}</h1>
+    <span class="label-decoration w-40 h-0.5"></span>
+  </div>
+  <div class="mt-10">
+    <p class="mb-5">{t("about.description.part1")}</p>
+    <p>{t("about.description.part2")}</p>
+    <p>{t("about.description.part3")}</p>
+    <p>
+      {t("about.description.part4.1")}
+      <span class="color-primary-500">{t("about.description.keyword.dev")}</span>{t("about.description.part4.2")}<span class="color-primary-500">
+        open source</span
+      >.
+    </p>
+  </div>
+  <p class="mt-10">{t("about.hobbies")}</p>
+</section>

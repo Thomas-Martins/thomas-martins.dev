@@ -1,0 +1,25 @@
+---
+import { t } from "i18next";
+import ProjectsCard from "../components/projects-card.astro";
+const projects = await Astro.glob("../projects/*.json");
+---
+
+<section class="mt-20">
+  <div class="flex items-center">
+    <h1 class="section-label px-3 py-1.5 rounded-lg">{t("projects.section.title")}</h1>
+    <span class="label-decoration w-50 h-0.5"></span>
+  </div>
+  <div class="mt-10">
+    <p class="mb-5">{t("projects.section.description")}</p>
+    <a href="/projects" class="!color-primary-500 font-semibold"
+      >{t("projects.section.link")} <i class="ri-arrow-right-line !color-primary-500"></i></a
+    >
+  </div>
+  <div class="mt-5 flex flex-col gap-5">
+    {
+      projects
+        .slice(0, 3)
+        .map((project) => <ProjectsCard title={project.title} tags={project.tags} description={project.description} imageUrl={project.imageUrl} />)
+    }
+  </div>
+</section>

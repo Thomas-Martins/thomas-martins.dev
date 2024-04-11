@@ -1,0 +1,44 @@
+{
+  "site": {
+    "title": "Mon super site web !",
+    "description": "Voici la description de mon super site web !"
+  },
+  "home": {
+    "title": "Bienvenue sur mon super site web !",
+    "subtitle": "Ceci est une chaine de charactères <0>plus compliquée</0> à traduire, il y a des <1>éléments html</1>, comme <2>un super lien</2> par exemple !"
+  },
+  "link": {
+    "home": "Accueil",
+    "projects": "Projets"
+  },
+  "job": {
+    "title": "Développeur Web et Web Mobile.",
+    "situation": "Je suis actuellement en Bachelor Concepteur Développeur d’Applications.",
+    "option1": "🚀 En quête d’opportunités, et de projets perso.",
+    "option2": "💻 Spécialisation en développement Front-End"
+  },
+  "about": {
+    "title": "⚡️ A propos de moi",
+    "description": {
+      "part1": "Hey ! Je suis Thomas Martins, passionné par l’informatique et la technologie depuis toujours.",
+      "part2": "J'ai eu la chance d'utiliser un ordinateur depuis mon plus jeune âge, ce qui a suscité ma passion pour la technologie.",
+      "part3": "J’ai vraiment aimé créer des petits sites et blogs depuis le lycée.",
+      "part4.1": "J'ai eu l'occasion de travailler sur de nombreux projets en utilisant diverses technologies et langages de programmation. Je suis passionné par le ",
+      "part4.2": ", et j'aime particulièrement travailler sur des projets",
+      "keyword": {
+        "dev": "développement web"
+      }
+    },
+    "hobbies": "Quand je code pas, j'aime bien jouer à des jeux 🎮 avec mes amis, voyager ✈️ ou mater des séries sur Netflix 🍿! "
+  },
+  "projects": {
+    "section": {
+      "title": "🛠️ Mon travail",
+      "description": "Voici quelques projets sur lesquels j'ai travaillé.",
+      "link": "Voir plus"
+    }
+  },
+  "skill": {
+    "title": "🔥 Compétences"
+  }
+}

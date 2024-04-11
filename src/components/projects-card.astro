@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import Pill from "./pill.astro";
+
+const { title, tags, description, imageUrl } = Astro.props;
+---
+
+<div class="border-solid border-0.5 border-dark-300 rounded-lg overflow-hidden">
+  <div>
+    <Image width="1920" height="1080" src={imageUrl} alt="project-thumbnail" />
+  </div>
+  <div class="bg-dark-900 p-2">
+    <h1 class="text-xl color-white">{title}</h1>
+    <div class="flex gap-2 border-b border-dark-300 py-2">
+      {tags.map((tag: string) => <Pill label={tag} />)}
+    </div>
+    <p class="!color-dark-400 text-xs mt-2">{description}</p>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+---
+import { t } from "i18next";
+import Button from "../components/button.astro";
+---
+
+<section class="">
+  <div class="mt-15 text-center">
+    <h3 class="text-gradient text-3xl font-bold">Salut! Je suis</h3>
+    <h1 class="font-bold text-4xl">Thomas Martins</h1>
+  </div>
+  <div class="text-center mt-6 text-2xl">
+    <h1 class="font-regular"><span class="font-bold !color-primary-500">{t("job.title")}</span> {t("job.situation")}</h1>
+  </div>
+  <div class="text-center mt-6">
+    <p>{t("job.option1")}</p>
+    <p>{t("job.option2")}</p>
+  </div>
+  <div class="mt-6 space-x-5 text-center">
+    <Button label="Github" icon="ri-github-fill" className="color-white bg-primary-500 rounded-lg px-3 py-2" />
+    <Button label="LinkedIn" icon="ri-linkedin-box-fill" className="color-white bg-primary-500 rounded-lg px-3 py-2" />
+    <Button label="Email" icon="ri-mail-send-line" className="color-white bg-primary-500  rounded-lg px-3 py-2" />
+  </div>
+</section>

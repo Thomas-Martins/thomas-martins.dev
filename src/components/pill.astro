@@ -1,0 +1,8 @@
+---
+const { label } = Astro.props;
+---
+
+<div class={`${label.toLocaleLowerCase()} px-2 py-0.5 text-xs flex items-center gap-1`}>
+  <img class="w-3 h-3" src={`../icons/${label.toLocaleLowerCase()}.svg`} alt="tag-icon" />
+  <p>{label}</p>
+</div>

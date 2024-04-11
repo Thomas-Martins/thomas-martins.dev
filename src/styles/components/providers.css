@@ -1,0 +1,97 @@
+.html {
+  background: rgba(201, 77, 42, 0.2);
+  border-radius: 5px;
+}
+
+.html p {
+  color: rgb(201, 77, 42) !important;
+}
+
+.css {
+  background: rgba(67, 138, 199, 0.2);
+  border-radius: 5px;
+}
+
+.css p {
+  color: rgb(67, 138, 199) !important;
+}
+
+.javascript {
+  background: rgba(234, 218, 32, 0.2);
+  border-radius: 5px;
+}
+
+.javascript p {
+  color: rgb(234, 218, 32) !important;
+}
+
+.php {
+  background: rgba(123, 133, 173, 0.2);
+  border-radius: 5px;
+}
+
+.php p {
+  color: rgb(123, 133, 173) !important;
+}
+
+.react {
+  background: rgba(79, 207, 252, 0.2);
+  border-radius: 5px;
+}
+
+.react p {
+  color: rgb(79, 207, 252) !important;
+}
+
+.vuejs {
+  background: rgba(83, 166, 118, 0.2);
+  border-radius: 5px;
+}
+
+.vuejs p {
+  color: rgb(83, 166, 118) !important;
+}
+
+.astro {
+  background: rgba(105, 40, 53, 0.2);
+  border-radius: 5px;
+}
+
+.astro p {
+  color: rgb(105, 40, 53) !important;
+}
+
+.laravel {
+  background: rgba(234, 84, 59, 0.2);
+  border-radius: 5px;
+}
+
+.laravel p {
+  color: rgb(234, 84, 59) !important;
+}
+
+.symfony {
+  background: rgba(132, 132, 132, 0.2);
+  border-radius: 5px;
+}
+
+.symfony p {
+  color: rgb(132, 132, 132) !important;
+}
+
+.adonis {
+  background: rgba(74, 72, 248, 0.2);
+  border-radius: 5px;
+}
+
+.adonis p {
+  color: rgb(74, 72, 248) !important;
+}
+.sql {
+  background: rgba(180, 180, 179, 0.2);
+  border-radius: 5px;
+}
+
+.sql p {
+  color: rgb(180, 180, 179) !important;
+}

@@ -1,0 +1,21 @@
+---
+import { t } from "i18next";
+const skills = ["Html", "Css", "Javascript", "Php", "React", "Laravel", "Adonis"];
+---
+
+<section class="mt-20">
+  <div class="flex items-center">
+    <h1 class="section-label px-3 py-1.5 rounded-lg">{t("skill.title")}</h1>
+    <span class="label-decoration w-50 h-0.5"></span>
+  </div>
+  <div class="mt-10 flex flex-wrap justify-center gap-5">
+    {
+      skills.map((skill) => (
+        <div class="w-25 h-25 flex flex-col items-center justify-center border-gradient">
+          <img class="w-10 h-10" src={`../icons/${skill.toLocaleLowerCase()}.svg`} alt="skill-icon" />
+          <h5>{skill}</h5>
+        </div>
+      ))
+    }
+  </div>
+</section>

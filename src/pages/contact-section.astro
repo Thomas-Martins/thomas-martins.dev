@@ -3,23 +3,45 @@ import { t } from "i18next";
 import Button from "../components/button.astro";
 ---
 
-<section class="mt-20 text-center">
-  <h1 class="text-3xl mb-10 font-mono">{t("contact.slogan")}</h1>
-  <p>{t("contact.text1")}<span class="color-primary-500">{t("contact.state")}</span>.</p>
-  <p>{t("contact.text2")}</p>
-  <div class="mt-6 space-x-5 text-center">
-    <Button
-      label="Github"
-      icon="ri-github-fill"
-      url="https://github.com/Thomas-Martins"
-      className="color-white bg-primary-500 rounded-lg px-3 py-2"
-    />
+<section id="contact-section" class="mt-20 text-center lg:mt-50">
+  <div>
+    <h1 class="text-3xl mb-10 font-sans font-bold md:text-5xl">{t("contact.slogan")}</h1>
+  </div>
+  <div>
+    <p>{t("contact.text1")}<span class="color-primary-500">{t("contact.state")}</span>.</p>
+    <p>{t("contact.text2")}</p>
+  </div>
+  <div class="mt-6 space-x-5 text-center md:mt-10">
     <Button
       label="LinkedIn"
       icon="ri-linkedin-box-fill"
       url="https://www.linkedin.com/in/thomasmartinsdev/"
-      className="color-white bg-primary-500 rounded-lg px-3 py-2"
+      className="bg-dark-700 hover:bg-dark-600 duration-400"
     />
-    <Button label="Email" icon="ri-mail-send-line" url="/contact" className="color-white bg-primary-500  rounded-lg px-3 py-2" />
+    <Button label={t("contact.cv")} icon="ri-file-text-fill" url="/thomas-martins.pdf" className="bg-dark-700 hover:bg-dark-600 duration-400" />
+    <Button label="Email" icon="ri-mail-send-line" url="mailto:thomas.martins1710@gmail.com" className="bg-dark-700 hover:bg-dark-600 duration-400" />
   </div>
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll("#contact-section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+            entry.target.classList.add("fade-in-up");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      }
+    ); // Se déclenche lorsque 50% ou plus de l'élément est visible
+
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
+  });
+</script>

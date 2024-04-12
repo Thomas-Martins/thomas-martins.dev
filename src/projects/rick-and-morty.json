@@ -1,0 +1,8 @@
+{
+  "title": "Rick & Morty",
+  "tags": ["React"],
+  "description": "Created as a test project for a company, this interface seamlessly interacts with the Rick and Morty API.",
+  "imageUrl": "https://raw.githubusercontent.com/Thomas-Martins/react-morty/main/screenshots/screenshot.png",
+  "githubUrl": "https://github.com/Thomas-Martins/react-morty",
+  "url": "https://react-morty-thomas.netlify.app/"
+}

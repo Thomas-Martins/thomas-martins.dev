@@ -18,7 +18,7 @@
     "option2": "💻 Spécialisation en développement Front-End"
   },
   "about": {
-    "title": "⚡️ A propos de moi",
+    "title": "A propos de moi",
     "description": {
       "part1": "Hey ! Je suis Thomas Martins, passionné par l’informatique et la technologie depuis toujours.",
       "part2": "J'ai eu la chance d'utiliser un ordinateur depuis mon plus jeune âge, ce qui a suscité ma passion pour la technologie.",
@@ -29,22 +29,29 @@
         "dev": "développement web"
       }
     },
+    "aria-label": {
+      "dev": "J'aime crée des applications avec des Frameworks JavaScript (ReactJs, AdonisJs)",
+      "open-source": "J'aime l'idée de contribuer ou de donner des projets qui peuvent être utiles aux autres."
+    },
     "hobbies": "Quand je code pas, j'aime bien jouer à des jeux 🎮 avec mes amis, voyager ✈️ ou mater des séries sur Netflix 🍿! "
   },
   "projects": {
+    "title": "Mes Projets",
+    "description": "J'adore travailler sur des projets et m'entrainer, voici certains des projets sur lesquelles j'ai travaillés.",
     "section": {
-      "title": "🛠️ Mon travail",
+      "title": "Mon travail",
       "description": "Voici quelques projets sur lesquels j'ai travaillé.",
       "link": "Voir plus"
     }
   },
   "skill": {
-    "title": "🔥 Compétences"
+    "title": "Compétences"
   },
   "contact": {
-    "slogan": "Entrons en contact.",
+    "slogan": "Entrons en Contact.",
     "text1": "Je suis actuellement spécialisé dans le ",
-    "state": "développement Front- End",
-    "text2": "N'hésitez pas à me contacter et à discuter davantage de vos projets."
+    "state": "développement Front-End",
+    "text2": "N'hésitez pas à me contacter et à discuter davantage de vos projets.",
+    "cv": "Mon cv"
   }
 }

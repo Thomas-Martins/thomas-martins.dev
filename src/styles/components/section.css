@@ -1,7 +1,0 @@
-.section-label {
-  background: var(--bg-label);
-}
-
-.label-decoration {
-  background: -webkit-linear-gradient(left, var(--bg-label) 0%, var(--bg-color) 100%);
-}

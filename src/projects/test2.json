@@ -1,8 +1,0 @@
-{
-  "title": "Test2",
-  "tags": ["Adonis", "VueJS", "Html", "Css", "Sql"],
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-  "imageUrl": "https://raw.githubusercontent.com/Thomas-Martins/ChatApp/main/screenshot/realtimeChat.gif",
-  "githubUrl": "https://github.com/",
-  "url": "https://github.com/"
-}

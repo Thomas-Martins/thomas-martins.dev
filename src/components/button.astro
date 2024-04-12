@@ -1,8 +1,8 @@
 ---
-const { label, icon, className } = Astro.props;
+const { label, icon, className, url } = Astro.props;
 ---
 
-<button class={className}>
+<a href={url} class={className}>
   <i class={`${icon} bg-transparent ri-lg`}></i>
   {label}
-</button>
+</a>

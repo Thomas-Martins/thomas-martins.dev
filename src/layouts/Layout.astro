@@ -2,6 +2,7 @@
 import { HeadHrefLangs } from "astro-i18next/components";
 import i18next from "i18next";
 import "remixicon/fonts/remixicon.css";
+import Footer from "./footer.astro";
 import Header from "./header.astro";
 interface Props {
   title: string;
@@ -26,5 +27,6 @@ const { title } = Astro.props;
   <body class="max-w-screen-lg m-auto">
     <Header />
     <slot />
+    <Footer />
   </body>
 </html>

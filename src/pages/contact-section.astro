@@ -3,18 +3,10 @@ import { t } from "i18next";
 import Button from "../components/button.astro";
 ---
 
-<section class="">
-  <div class="mt-15 text-center">
-    <h3 class="text-gradient text-3xl font-bold">Salut! Je suis</h3>
-    <h1 class="font-bold text-4xl">Thomas Martins</h1>
-  </div>
-  <div class="text-center mt-6 text-2xl">
-    <h1 class="font-regular"><span class="font-bold !color-primary-500">{t("job.title")}</span> {t("job.situation")}</h1>
-  </div>
-  <div class="text-center mt-6">
-    <p>{t("job.option1")}</p>
-    <p>{t("job.option2")}</p>
-  </div>
+<section class="mt-20 text-center">
+  <h1 class="text-3xl mb-10 font-mono">{t("contact.slogan")}</h1>
+  <p>{t("contact.text1")}<span class="color-primary-500">{t("contact.state")}</span>.</p>
+  <p>{t("contact.text2")}</p>
   <div class="mt-6 space-x-5 text-center">
     <Button
       label="Github"

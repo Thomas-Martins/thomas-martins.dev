@@ -40,5 +40,11 @@
   },
   "skill": {
     "title": "🔥 Compétences"
+  },
+  "contact": {
+    "slogan": "Entrons en contact.",
+    "text1": "Je suis actuellement spécialisé dans le ",
+    "state": "développement Front- End",
+    "text2": "N'hésitez pas à me contacter et à discuter davantage de vos projets."
   }
 }

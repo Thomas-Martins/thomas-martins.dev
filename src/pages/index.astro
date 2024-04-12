@@ -1,11 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import AboutSection from "./about-section.astro";
+import ContactSection from "./contact-section.astro";
+import IntroSection from "./intro-section.astro";
+import ProjectsSection from "./projects-section.astro";
+import SkillSection from "./skill-section.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Portfolio de Thomas Martins in progress ...</h1>
-	</main>
+<Layout title="Portfolio | TM">
+  <main class="px-8 md:px-15 xl:px-30 2xl:px-50">
+    <IntroSection />
+    <AboutSection />
+    <ProjectsSection />
+    <SkillSection />
+    <ContactSection />
+  </main>
 </Layout>
-
-

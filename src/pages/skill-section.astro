@@ -1,0 +1,42 @@
+---
+import { t } from "i18next";
+const skills = ["Html", "Css", "Javascript", "Php", "React", "Laravel", "Adonis"];
+---
+
+<section id="skill-section" class="mt-20">
+  <div id="skill-div" class="flex items-center">
+    <h1 class="section-label px-3 py-1.5 rounded-lg md:text-lg lg:text-2xl">🔥 <span class="font-mono">{t("skill.title")}</span></h1>
+    <span class="label-decoration w-50 h-0.5 md:w-100 lg:w-150"></span>
+  </div>
+  <div id="skill-div" class="mt-10 flex flex-wrap justify-center gap-5 lg:mt-20">
+    {
+      skills.map((skill) => (
+        <div class="w-25 h-25 flex flex-col gap-2 items-center justify-center border-gradient">
+          <img class="w-10 h-10" src={`../icons/${skill.toLocaleLowerCase()}.svg`} alt="skill-icon" />
+          <p>{skill}</p>
+        </div>
+      ))
+    }
+  </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll("#skill-div");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+            entry.target.classList.add("fade-in-up");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    ); // Se déclenche lorsque 50% ou plus de l'élément est visible
+
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
+  });
+</script>

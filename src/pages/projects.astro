@@ -1,0 +1,33 @@
+---
+import { t } from "i18next";
+import ProjectsCard from "../components/projects-card.astro";
+import Layout from "../layouts/Layout.astro";
+const projects = await Astro.glob("../projects/*.json");
+---
+
+<Layout title="All Projects | TM">
+  <main class="p-8 mt-10 md:px-15 xl:px-30 2xl:px-50 min-h-screen">
+    <div>
+      <h1 class="text-3xl font-bold">{t("projects.title")}</h1>
+      <p class="text-sm mt-5">{t("projects.description")}</p>
+    </div>
+    <section class="mt-10">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 2xl:grid-cols-3">
+        {
+          projects.map((project) => (
+            <div class="fade-in-up">
+              <ProjectsCard
+                title={project.title}
+                tags={project.tags}
+                description={project.description}
+                imageUrl={project.imageUrl}
+                githubUrl={project.githubUrl}
+                url={project.url}
+              />
+            </div>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,150 @@
+@import "../styles/components/providers.css";
+@import "../styles/components/animation.css";
+
+:root {
+  --bg-color-light: #fff;
+  --bg-color-dark: #161616;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-primary: #3ccf91;
+  --invert-light: invert(0.97);
+  --invert-dark: invert(0.1);
+  --border-gradient-light: linear-gradient(120deg, var(--color-primary) 0%, #eeeeee 50%);
+  --border-gradient-dark: linear-gradient(120deg, var(--color-primary) 0%, #212121 50%);
+  --btn-color-light: #e5e5e5;
+  --btn-color-light-hover: #c4c4c4;
+  --btn-color-dark: #262626;
+  --btn-color-dark-hover: #323131;
+}
+:root[data-theme="light"] {
+  --bg-color: var(--bg-color-light);
+  --color-title: var(--color-black);
+  --color-text: var(--color-black);
+  --logo-color-1: #c4c4c4;
+  --logo-color-2: var(--color-black);
+  --bg-label: #d9d9d9;
+  --invert: var(--invert-light);
+  --border-gradient: var(--border-gradient-light);
+  --btn-color: var(--btn-color-light);
+  --btn-color-hover: var(--btn-color-light-hover);
+}
+:root[data-theme="dark"] {
+  --bg-color: var(--bg-color-dark);
+  --color-title: var(--color-white);
+  --color-text: #8c979c;
+  --logo-color-1: #505050;
+  --logo-color-2: var(--color-white);
+  --bg-label: var(--color-primary);
+  --invert: var(--invert-dark);
+  --border-gradient: var(--border-gradient-dark);
+  --btn-color: var(--btn-color-dark);
+  --btn-color-hover: var(--btn-color-dark-hover);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Inter", sans-serif;
+}
+html {
+  background: var(--bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-title);
+}
+p {
+  color: var(--color-text) !important;
+}
+a,
+i {
+  color: var(--color-title) !important;
+}
+.btn-color {
+  background: var(--btn-color);
+}
+.btn-color:hover {
+  background: var(--btn-color-hover);
+  transition: 300ms ease-in-out;
+}
+.svg-filter {
+  filter: var(--invert);
+}
+.text-gradient {
+  background: -webkit-linear-gradient(left, #1f6648 0%, #3ccf91 30%, #3ccf91 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.border-gradient {
+  position: relative;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+}
+
+.border-gradient::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: var(--border-gradient);
+  z-index: -1;
+  border-radius: 10px;
+}
+#about-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease;
+  animation: fadeIn 0.4s 0.2s forwards;
+}
+#project-div,
+#skill-div,
+#contact-section {
+  opacity: 0;
+}
+.cursor-help {
+  position: relative;
+}
+
+.cursor-help::after {
+  width: 200px;
+  content: attr(aria-label);
+  position: absolute;
+  bottom: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #161616;
+  color: #c8cacc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: solid 1px #3dcf91;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.cursor-help:hover::after {
+  opacity: 1;
+}
+.section-label {
+  background: var(--bg-label);
+}
+
+.label-decoration {
+  background: -webkit-linear-gradient(left, var(--bg-label) 0%, var(--bg-color) 100%);
+}
+.logo-color {
+  color: var(--logo-color-1);
+}
+.logo-color span {
+  color: var(--logo-color-2);
+}

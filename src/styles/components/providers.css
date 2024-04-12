@@ -53,12 +53,12 @@
 }
 
 .astro {
-  background: rgba(105, 40, 53, 0.2);
+  background: rgba(240, 106, 35, 0.2);
   border-radius: 5px;
 }
 
 .astro p {
-  color: rgb(105, 40, 53) !important;
+  color: rgb(240, 106, 35) !important;
 }
 
 .laravel {
@@ -94,4 +94,19 @@
 
 .sql p {
   color: rgb(180, 180, 179) !important;
+}
+
+.postgresql {
+  background: rgba(59, 99, 137, 0.2);
+  border-radius: 5px;
+}
+.postgresql p {
+  color: rgb(59, 99, 137) !important;
+}
+.unocss {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+.unocss p {
+  color: rgb(255, 255, 255) !important;
 }

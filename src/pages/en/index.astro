@@ -1,0 +1,21 @@
+---
+import { changeLanguage } from "i18next";
+import AboutSection from "../../components/about-section.astro";
+import ContactSection from "../../components/contact-section.astro";
+import IntroSection from "../../components/intro-section.astro";
+import ProjectsSection from "../../components/projects-section.astro";
+import SkillSection from "../../components/skill-section.astro";
+import Layout from "../../layouts/Layout.astro";
+
+changeLanguage("en");
+---
+
+<Layout title="Portfolio | TM">
+  <main class="px-8 md:px-15 xl:px-30 2xl:px-50">
+    <IntroSection />
+    <AboutSection />
+    <ProjectsSection />
+    <SkillSection />
+    <ContactSection />
+  </main>
+</Layout>

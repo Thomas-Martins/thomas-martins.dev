@@ -1,6 +1,6 @@
 ---
 import { t } from "i18next";
-import ThemeToggle from "../components/theme-toggle.astro";
+import ThemeToggle from "./common/theme-toggle.astro";
 ---
 
 <header id="header" class="w-full">
@@ -11,10 +11,11 @@ import ThemeToggle from "../components/theme-toggle.astro";
     <div>
       <h1 class="font-mono font-bold text-3xl md:text-5xl logo-color">&#60;<span class="font-mono">TM</span>/&#62;</h1>
     </div>
-    <div class="space-x-5 text-sm 2xl:text-xl">
+    <div class="space-x-3 text-sm 2xl:text-xl">
       <a href="/">{t("link.home")}</a>
       <a href="/projects">{t("link.projects")}</a>
       <ThemeToggle />
+      {t("link.home") === "Accueil" ? <a href="/en">| EN |</a> : <a href="/">| FR |</a>}
     </div>
   </nav>
 </header>

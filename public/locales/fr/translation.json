@@ -1,12 +1,4 @@
 {
-  "site": {
-    "title": "Mon super site web !",
-    "description": "Voici la description de mon super site web !"
-  },
-  "home": {
-    "title": "Bienvenue sur mon super site web !",
-    "subtitle": "Ceci est une chaine de charactères <0>plus compliquée</0> à traduire, il y a des <1>éléments html</1>, comme <2>un super lien</2> par exemple !"
-  },
   "link": {
     "home": "Accueil",
     "projects": "Projets"
@@ -17,6 +9,9 @@
     "option1": "🚀 En quête d’opportunités, et de projets perso.",
     "option2": "💻 Spécialisation en développement Front-End"
   },
+  "intro": {
+    "label": "Salut! Je suis"
+  },
   "about": {
     "title": "A propos de moi",
     "description": {
@@ -26,14 +21,14 @@
       "part4.1": "J'ai eu l'occasion de travailler sur de nombreux projets en utilisant diverses technologies et langages de programmation. Je suis passionné par le ",
       "part4.2": ", et j'aime particulièrement travailler sur des projets",
       "keyword": {
-        "dev": "développement web"
+        "dev": "Développement Web"
       }
     },
     "aria-label": {
       "dev": "J'aime crée des applications avec des Frameworks JavaScript (ReactJs, AdonisJs)",
-      "open-source": "J'aime l'idée de contribuer ou de donner des projets qui peuvent être utiles aux autres."
+      "open-source": "J'aime l'idée de contribuer ou faire des projets qui peuvent être utiles aux autres."
     },
-    "hobbies": "Quand je code pas, j'aime bien jouer à des jeux 🎮 avec mes amis, voyager ✈️ ou mater des séries sur Netflix 🍿! "
+    "hobbies": "Quand je ne code pas, je joue à des jeux 🎮 avec mes amis, je voyage ✈️ ou encore j'aime regarder des séries sur Netflix 🍿! "
   },
   "projects": {
     "title": "Mes Projets",

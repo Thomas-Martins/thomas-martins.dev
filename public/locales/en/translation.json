@@ -1,10 +1,52 @@
 {
-  "site": {
-    "title": "My awesome website!",
-    "description": "Here is the description of my awesome website!"
+  "link": {
+    "home": "Home",
+    "projects": "Projects"
   },
-  "home": {
-    "title": "Welcome to my awesome website!",
-    "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!"
+  "job": {
+    "title": "Web and web mobile developer.",
+    "situation": "I am currently in a Bachelor's degree in Web Development.",
+    "option1": "🚀 Exploring opportunities and side projects.",
+    "option2": "💻 Currently specialing in Front-End Development."
+  },
+  "intro": {
+    "label": "Hey! I am"
+  },
+  "about": {
+    "title": "About me",
+    "description": {
+      "part1": "Hey! I'm Thomas Martins, passionate about computers and technology since forever.",
+      "part2": "I've been lucky enough to use a computer since I was young, which sparked my passion for technology.",
+      "part3": "I really enjoyed creating small websites and blogs since high school.",
+      "part4.1": "I've had the chance to work on projects using various technologies and programming languages. I'm passionate about ",
+      "part4.2": ", and I particularly enjoy working on projects.",
+      "keyword": {
+        "dev": "Web Development"
+      }
+    },
+    "aria-label": {
+      "dev": "I love building applications with JavaScript Frameworks (ReactJs, AdonisJs).",
+      "open-source": "I love the idea of contributing or make projects that can be useful to others."
+    },
+    "hobbies": "When I'm not coding, I playing games 🎮 with my friends, traveling ✈️, or watch somes series on Netflix 🍿!"
+  },
+  "projects": {
+    "title": "My Projects",
+    "description": "I love working et practicing on projects, here are some of the projects I've worked on.",
+    "section": {
+      "title": "My Work",
+      "description": "Here's some of my projects that i have worked on.",
+      "link": "Explore more"
+    }
+  },
+  "skill": {
+    "title": "Skills"
+  },
+  "contact": {
+    "slogan": "Keep In Touch.",
+    "text1": "I am currently specializing in ",
+    "state": "Front-End development",
+    "text2": "Feel free to contact me and talk more about your projects.",
+    "cv": "Resume"
   }
 }

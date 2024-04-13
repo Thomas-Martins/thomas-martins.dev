@@ -1,11 +1,11 @@
 ---
 import { t } from "i18next";
-import Button from "../components/button.astro";
+import Button from "./common/button.astro";
 ---
 
 <section id="intro-section" class="">
   <div class="mt-15 text-center fade-in-up md:text-left md:mt-30 lg:mt-50">
-    <h3 class="text-gradient text-3xl font-bold md:text-5xl">Salut! Je suis</h3>
+    <h3 class="text-gradient text-3xl font-bold md:text-5xl">{t("intro.label")}</h3>
     <h1 class="font-bold text-4xl md:text-7xl lg:text-8xl">Thomas Martins.</h1>
   </div>
   <div class="text-center mt-6 text-2xl fade-in-up md:text-left">

@@ -2,9 +2,6 @@
 
 ---
 
-<button id="toggleButton" class="toggle-btn">
-  <i class="ri-moon-fill"></i>
-</button>
 <script>
   const storageKey = "thomasmartins_theme_preference";
 
@@ -17,9 +14,10 @@
   };
 
   const setPreference = (themeName: string) => {
-    const root = document.firstElementChild;
+    const root = document.documentElement;
     if (root) {
-      root.setAttribute("data-theme", themeName);
+      root.classList.remove("light", "dark");
+      root.classList.add(themeName);
     }
     localStorage.setItem(storageKey, themeName);
   };
@@ -50,7 +48,10 @@
   })();
 
   const toggleButton = document.getElementById("toggleButton");
-  toggleButton?.addEventListener("click", (e) => {
+  toggleButton?.addEventListener("click", () => {
     switchTheme();
   });
 </script>
+<button id="toggleButton" class="toggle-btn">
+  <i class="ri-moon-fill"></i>
+</button>

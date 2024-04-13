@@ -48,5 +48,11 @@
     "state": "développement Front-End",
     "text2": "N'hésitez pas à me contacter et à discuter davantage de vos projets.",
     "cv": "Mon cv"
+  },
+  "seo": {
+    "title": "Portfolio | Thomas Martins",
+    "description": "Voici le portfolio de Thomas Martins, développeur Web, spécialisé en développement Front-End. Jetez un oeil sur les projets sur lesquels il a travaillé",
+    "ogTitle": "Le site où je parle de moi, de ma stack et des projets que j'ai faits.",
+    "ogImageAlt": "Photo de Thomas Martins, Développeur Web vivant en France."
   }
 }

@@ -1,6 +1,7 @@
 ---
 import { HeadHrefLangs } from "astro-i18next/components";
-import i18next from "i18next";
+import { SEO } from "astro-seo";
+import i18next, { t } from "i18next";
 import "remixicon/fonts/remixicon.css";
 import Footer from "../components/footer.astro";
 import Header from "../components/header.astro";
@@ -12,6 +13,10 @@ interface Props {
 
 const { title } = Astro.props;
 const lang = i18next.language;
+const seoTitle = t("seo.title") as string;
+const seoDescription = t("seo.description") as string;
+const seoOgTitle = t("seo.ogTitle") as string;
+const seoOgImageAlt = t("seo.ogImageAlt") as string;
 ---
 
 <!doctype html>
@@ -26,6 +31,24 @@ const lang = i18next.language;
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="generator" content={Astro.generator} />
     <HeadHrefLangs />
+    <SEO
+      title={seoTitle}
+      description={seoDescription}
+      openGraph={{
+        basic: {
+          title: seoOgTitle,
+          type: "website",
+          image: seoOgImageAlt,
+        },
+      }}
+      twitter={{
+        card: "summary_large_image",
+        site: "@@thomasmtsdev",
+        creator: "@@thomasmtsdev",
+        title: seoOgTitle,
+        imageAlt: seoOgImageAlt,
+      }}
+    />
     <title>{title}</title>
   </head>
   <body class="m-auto">

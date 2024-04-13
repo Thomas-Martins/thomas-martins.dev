@@ -11,11 +11,22 @@ import ThemeToggle from "./common/theme-toggle.astro";
     <div>
       <h1 class="font-mono font-bold text-3xl md:text-5xl logo-color">&#60;<span class="font-mono">TM</span>/&#62;</h1>
     </div>
-    <div class="space-x-3 text-sm 2xl:text-xl">
-      <a href="/">{t("link.home")}</a>
-      <a href="/projects">{t("link.projects")}</a>
-      <ThemeToggle />
-      {t("link.home") === "Accueil" ? <a href="/en">| EN |</a> : <a href="/">| FR |</a>}
-    </div>
+    {
+      t("link.home") === "Accueil" ? (
+        <div class="space-x-3 text-sm 2xl:text-xl">
+          <a href="/">{t("link.home")}</a>
+          <a href="/projects">{t("link.projects")}</a>
+          <a href="/en">| EN |</a>
+          <ThemeToggle />
+        </div>
+      ) : (
+        <div class="space-x-3 text-sm 2xl:text-xl">
+          <a href="/en">{t("link.home")}</a>
+          <a href="/en/projects">{t("link.projects")}</a>
+          <a href="/">| FR |</a>
+          <ThemeToggle />
+        </div>
+      )
+    }
   </nav>
 </header>

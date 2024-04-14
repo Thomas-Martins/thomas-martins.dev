@@ -6,20 +6,20 @@ const projects = await Astro.glob("../projects/*.json");
 ---
 
 <section id="project-section" class="mt-20">
-  <div class="mt-5 flex flex-col gap-10 md:grid md:grid-cols-2">
+  <div id="project-intro" class="mt-5 flex flex-col gap-10 md:grid md:grid-cols-2">
     <div>
-      <div id="project-div" class="flex items-center">
+      <div class="flex items-center">
         <h1 class="section-label px-3 py-1.5 rounded-lg md:text-lg lg:text-2xl">🛠️ <span class="font-mono">{t("projects.section.title")}</span></h1>
-        <span class="label-decoration w-30 h-0.5 lg:w-50 xl:w-80"></span>
+        <span class="label-decoration w-[50%] h-0.5"></span>
       </div>
-      <div id="project-div" class="mt-5 lg:text-xl">
+      <div class="mt-5 lg:text-xl">
         <p class="mb-5">{t("projects.section.description")}</p>
         <a href="/projects" class="!color-primary-500">{t("projects.section.link")} <i class="ri-arrow-right-line !color-primary-500"></i></a>
       </div>
     </div>
     {
       projects.slice(0, 3).map((project, index) => (
-        <div id="project-div" class={`${index == 1 ? "md:-mt-20" : ""}`}>
+        <div id={`project-card-${index}`} class={` ${index == 1 ? "md:-mt-50 xl:-mt-80" : ""}`}>
           <ProjectsCard
             title={project.title}
             tags={project.tags}
@@ -35,18 +35,18 @@ const projects = await Astro.glob("../projects/*.json");
 </section>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll("#project-div");
+    const elements = document.querySelectorAll("[id^='project-card'], #project-intro");
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-            entry.target.classList.add("fade-in-up");
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.1) {
+            entry.target.classList.add("fade-in-up-custom");
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.1 }
     );
 
     elements.forEach((element) => {

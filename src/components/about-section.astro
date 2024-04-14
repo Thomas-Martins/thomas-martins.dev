@@ -5,18 +5,27 @@ import { t } from "i18next";
 <section id="about-section" class="mt-20">
   <div class="flex items-center">
     <h1 class="section-label px-3 py-1.5 rounded-lg md:text-lg lg:text-2xl">⚡️ <span class="font-mono">{t("about.title")}</span></h1>
-    <span class="label-decoration w-40 h-0.5 md:w-100 lg:w-150"></span>
+    <span class="label-decoration w-[50%] h-0.5"></span>
   </div>
-  <div class="mt-10 lg:text-lg">
-    <p class="mb-5">{t("about.description.part1")}</p>
-    <p>{t("about.description.part2")}</p>
-    <p>{t("about.description.part3")}</p>
-    <p>
-      {t("about.description.part4.1")}
-      <span class="color-primary-500 cursor-help" aria-label={t("about.aria-label.dev")}>{t("about.description.keyword.dev")}</span>{
-        t("about.description.part4.2")
-      }<span class="color-primary-500 cursor-help" aria-label={t("about.aria-label.open-source")}> Open Source</span>.
-    </p>
+  <div class="md:grid md:grid-cols-2 gap-5 items-center">
+    <div>
+      <div class="mt-10 lg:text-lg">
+        <p class="mb-5">{t("about.description.part1")}</p>
+        <p>{t("about.description.part2")}</p>
+        <p>{t("about.description.part3")}</p>
+        <p>
+          {t("about.description.part4.1")}
+          <span class="color-primary-500 cursor-help" aria-label={t("about.aria-label.dev")}>{t("about.description.keyword.dev")}</span>{
+            t("about.description.part4.2")
+          }<span class="color-primary-500 cursor-help" aria-label={t("about.aria-label.open-source")}> Open Source</span>.
+        </p>
+      </div>
+      <div>
+        <p class="mt-10">{t("about.hobbies")}</p>
+      </div>
+    </div>
+    <div id="profil-pic" class="w-[300px] h-[300px] rounded-full overflow-hidden border-8 border-solid border-primary-500 mx-auto mt-20 md:mt-0">
+      <img src="/profil.png" alt="thomas-martins-picture" />
+    </div>
   </div>
-  <p class="mt-10">{t("about.hobbies")}</p>
 </section>

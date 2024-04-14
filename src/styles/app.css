@@ -1,3 +1,4 @@
+/* ----- Variables ----- */
 :root {
   --bg-color-light: #fff;
   --bg-color-dark: #161616;
@@ -13,7 +14,7 @@
   --btn-color-dark: #262626;
   --btn-color-dark-hover: #323131;
 }
-
+/* ----- Light Theme ----- */
 .light {
   --bg-color: var(--bg-color-light);
   --color-title: var(--color-black);
@@ -26,6 +27,7 @@
   --btn-color: var(--btn-color-light);
   --btn-color-hover: var(--btn-color-light-hover);
 }
+/* ----- Dark Theme ----- */
 .dark {
   --bg-color: var(--bg-color-dark);
   --color-title: var(--color-white);
@@ -39,16 +41,20 @@
   --btn-color-hover: var(--btn-color-dark-hover);
 }
 
+/* ----- General Styles ----- */
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
   font-family: "Inter", sans-serif;
 }
+/* --- Set Colors by theme --- */
+/* background */
 html {
   background: var(--bg-color);
 }
-
+/* typo */
 h1,
 h2,
 h3,
@@ -64,6 +70,9 @@ a,
 i {
   color: var(--color-title) !important;
 }
+
+/* --- Custom CSS --- */
+/* button */
 .btn-color {
   background: var(--btn-color);
 }
@@ -71,21 +80,25 @@ i {
   background: var(--btn-color-hover);
   transition: 300ms ease-in-out;
 }
+/* svg */
 .svg-filter {
   filter: var(--invert);
 }
+
+/* -- Gradient -- */
+/* text */
 .text-gradient {
   background: -webkit-linear-gradient(left, #1f6648 0%, #3ccf91 30%, #3ccf91 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* border */
 .border-gradient {
   position: relative;
   background-color: var(--bg-color);
   border-radius: 8px;
 }
-
 .border-gradient::before {
   content: "";
   position: absolute;
@@ -97,21 +110,21 @@ i {
   z-index: -1;
   border-radius: 10px;
 }
-#about-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.4s ease;
-  animation: fadeIn 0.4s 0.2s forwards;
-}
-#project-div,
+/* other */
+#project-intro,
+[id^="project-card"],
 #skill-div,
 #contact-section {
   opacity: 0;
 }
+#profil-pic {
+  background: var(--bg-color);
+}
+
+/* cursor-help in about-section */
 .cursor-help {
   position: relative;
 }
-
 .cursor-help::after {
   width: 200px;
   content: attr(aria-label);
@@ -129,22 +142,32 @@ i {
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
-
 .cursor-help:hover::after {
   opacity: 1;
 }
+
+/* label section */
 .section-label {
   background: var(--bg-label);
 }
-
 .label-decoration {
   background: -webkit-linear-gradient(left, var(--bg-label) 0%, var(--bg-color) 100%);
 }
+
+/* Css for Logo TM in header */
 .logo-color {
   color: var(--logo-color-1);
 }
 .logo-color span {
   color: var(--logo-color-2);
+}
+
+/* Animation */
+#about-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease;
+  animation: fadeIn 0.4s 0.2s forwards;
 }
 .fade-in-up {
   opacity: 0;
@@ -164,19 +187,36 @@ i {
 .fade-in-up:nth-child(4) {
   animation: fadeIn 0.5s 1.1s forwards;
 }
+.fade-in-up-custom {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease;
+  animation: fadeIn 0.5s 0.5s forwards;
+}
 @keyframes fadeIn {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-.html {
-  background: rgba(201, 77, 42, 0.2);
+
+/* Providers CSS */
+.adonis {
+  background: rgba(74, 72, 248, 0.2);
   border-radius: 5px;
 }
 
-.html p {
-  color: rgb(201, 77, 42) !important;
+.adonis p {
+  color: rgb(74, 72, 248) !important;
+}
+
+.astro {
+  background: rgba(240, 106, 35, 0.2);
+  border-radius: 5px;
+}
+
+.astro p {
+  color: rgb(240, 106, 35) !important;
 }
 
 .css {
@@ -188,6 +228,15 @@ i {
   color: rgb(67, 138, 199) !important;
 }
 
+.html {
+  background: rgba(201, 77, 42, 0.2);
+  border-radius: 5px;
+}
+
+.html p {
+  color: rgb(201, 77, 42) !important;
+}
+
 .javascript {
   background: rgba(234, 218, 32, 0.2);
   border-radius: 5px;
@@ -195,6 +244,24 @@ i {
 
 .javascript p {
   color: rgb(234, 218, 32) !important;
+}
+
+.laravel {
+  background: rgba(234, 84, 59, 0.2);
+  border-radius: 5px;
+}
+
+.laravel p {
+  color: rgb(234, 84, 59) !important;
+}
+
+.postgresql {
+  background: rgba(59, 99, 137, 0.2);
+  border-radius: 5px;
+}
+
+.postgresql p {
+  color: rgb(59, 99, 137) !important;
 }
 
 .php {
@@ -215,31 +282,13 @@ i {
   color: rgb(79, 207, 252) !important;
 }
 
-.vuejs {
-  background: rgba(83, 166, 118, 0.2);
+.sql {
+  background: rgba(180, 180, 179, 0.2);
   border-radius: 5px;
 }
 
-.vuejs p {
-  color: rgb(83, 166, 118) !important;
-}
-
-.astro {
-  background: rgba(240, 106, 35, 0.2);
-  border-radius: 5px;
-}
-
-.astro p {
-  color: rgb(240, 106, 35) !important;
-}
-
-.laravel {
-  background: rgba(234, 84, 59, 0.2);
-  border-radius: 5px;
-}
-
-.laravel p {
-  color: rgb(234, 84, 59) !important;
+.sql p {
+  color: rgb(180, 180, 179) !important;
 }
 
 .symfony {
@@ -251,34 +300,20 @@ i {
   color: rgb(132, 132, 132) !important;
 }
 
-.adonis {
-  background: rgba(74, 72, 248, 0.2);
-  border-radius: 5px;
-}
-
-.adonis p {
-  color: rgb(74, 72, 248) !important;
-}
-.sql {
-  background: rgba(180, 180, 179, 0.2);
-  border-radius: 5px;
-}
-
-.sql p {
-  color: rgb(180, 180, 179) !important;
-}
-
-.postgresql {
-  background: rgba(59, 99, 137, 0.2);
-  border-radius: 5px;
-}
-.postgresql p {
-  color: rgb(59, 99, 137) !important;
-}
 .unocss {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
 }
+
 .unocss p {
   color: rgb(255, 255, 255) !important;
+}
+
+.vuejs {
+  background: rgba(83, 166, 118, 0.2);
+  border-radius: 5px;
+}
+
+.vuejs p {
+  color: rgb(83, 166, 118) !important;
 }

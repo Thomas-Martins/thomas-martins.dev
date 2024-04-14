@@ -8,12 +8,12 @@ const { title, tags, description, imageUrl, githubUrl, url } = Astro.props;
 <div class="border-solid border-0.5 border-dark-300 rounded-xl overflow-hidden">
   <div class="">
     <a class="" href={url}>
-      <Image class="h-[280px] object-cover 2xl:h-[350px]" width="1920" height="1080" src={imageUrl} alt="project-thumbnail" />
+      <Image class="h-[250px] object-cover 2xl:h-[350px]" width="1920" height="1080" src={imageUrl} alt="project-thumbnail" />
     </a>
   </div>
-  <div class="bg-dark-900 p-3 md:p-5 h-[180px] xl:h-[210px]">
+  <div class="bg-dark-900 p-2 md:p-5 h-auto md:h-[140px] lg:h-[120px] xl:h-[200px]">
     <div class="flex items-center justify-between">
-      <h1 class="text-xl color-white xl:text-3xl">{title}</h1>
+      <h1 class="text-lg color-white xl:text-3xl">{title}</h1>
       <div>
         {
           githubUrl && (
@@ -34,6 +34,6 @@ const { title, tags, description, imageUrl, githubUrl, url } = Astro.props;
     <div class="flex gap-2 border-b border-dark-300 py-2">
       {tags.map((tag: string) => <Pill label={tag} />)}
     </div>
-    <p class="!color-dark-400 text-xs mt-2 xl:text-md 2xl:text-lg">{description}</p>
+    <p class="!color-dark-400 text-xs mt-2 lg:text-md xl:text-lg 2xl:text-xl">{description}</p>
   </div>
 </div>

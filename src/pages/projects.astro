@@ -14,23 +14,21 @@ const projects = await Astro.glob("../projects/*.json");
       <h1 class="text-3xl font-bold">{t("projects.title")}</h1>
       <p class="text-sm mt-5">{t("projects.description")}</p>
     </div>
-    <section class="mt-10">
-      <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-        {
-          projects.map((project) => (
-            <div class="fade-in-up">
-              <ProjectsCard
-                title={project.title}
-                tags={project.tags}
-                description={project.description}
-                imageUrl={project.imageUrl}
-                githubUrl={project.githubUrl}
-                url={project.url}
-              />
-            </div>
-          ))
-        }
-      </div>
+    <section class="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2">
+      {
+        projects.map((project) => (
+          <div class="fade-in-up">
+            <ProjectsCard
+              title={project.title}
+              tags={project.tags}
+              description={project.description}
+              imageUrl={project.imageUrl}
+              githubUrl={project.githubUrl}
+              url={project.url}
+            />
+          </div>
+        ))
+      }
     </section>
   </main>
 </Layout>

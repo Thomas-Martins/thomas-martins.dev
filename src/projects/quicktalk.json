@@ -1,7 +1,7 @@
 {
   "title": "QuickTalk",
   "tags": ["React", "Laravel", "PostgreSQL"],
-  "description": "QuickTalk is a simple and intuitive instant messaging application that allows you to add users and chat with them in real-time. Whether you're coordinating projects, discussing important topics, or simply staying in touch with friends, QuickTalk provides a user-friendly platform for all your conversations.",
+  "description": "QuickTalk is a simple and intuitive instant messaging application that allows you to add users and chat with them in real-time.",
   "imageUrl": "https://raw.githubusercontent.com/Thomas-Martins/ChatApp/main/screenshot/screenshot.png",
   "githubUrl": "https://github.com/Thomas-Martins/ChatApp"
 }

@@ -48,5 +48,11 @@
     "state": "Front-End development",
     "text2": "Feel free to contact me and talk more about your projects.",
     "cv": "Resume"
+  },
+  "seo": {
+    "title": "Portfolio | Thomas Martins",
+    "description": "This is Thomas Martins' portfolio, Web developer, specialized in Front-End development. Take a look at the projects he has worked on.",
+    "ogTitle": "The site where I talk about myself, my stack, and the projects I've done.",
+    "ogImageAlt": "Photo of Thomas Martins, Web Developer living in France."
   }
 }

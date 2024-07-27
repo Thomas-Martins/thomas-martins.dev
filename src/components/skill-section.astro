@@ -27,15 +27,14 @@ const skills = ["Html", "Css", "Javascript", "Php", "React", "Laravel", "Adonis"
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.2) {
             entry.target.classList.add("fade-in-up");
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.5 }
-    ); // Se déclenche lorsque 50% ou plus de l'élément est visible
-
+      { threshold: 0.2 }
+    );
     elements.forEach((element) => {
       observer.observe(element);
     });

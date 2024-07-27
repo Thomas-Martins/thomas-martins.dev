@@ -44,6 +44,7 @@
   padding: 0;
   box-sizing: content-box;
   font-family: "Inter", sans-serif;
+  line-height: 1.5 !important;
 }
 html {
   background: var(--bg-color);

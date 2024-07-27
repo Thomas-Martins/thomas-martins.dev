@@ -21,7 +21,7 @@ const projects = await Astro.glob("../projects/*.json");
     </div>
     {
       projects.slice(0, 3).map((project, index) => (
-        <div id="project-div" class={`${index == 1 ? "md:-mt-20" : ""}`}>
+        <div id="project-div" class={`${index == 1 ? "md:-mt-50" : ""}`}>
           <ProjectsCard
             title={t("link.home") === "Accueil" ? project.fr?.title : project.en?.title}
             tags={project.tags}

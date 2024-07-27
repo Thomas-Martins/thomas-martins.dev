@@ -8,10 +8,16 @@ const { title, tags, description, imageUrl, githubUrl, url } = Astro.props;
 <div class="border-solid border-0.5 border-dark-300 rounded-xl overflow-hidden">
   <div class="">
     <a class="" href={url}>
-      <Image class="h-[280px] object-cover 2xl:h-[350px]" width="1920" height="1080" src={imageUrl} alt="project-thumbnail" />
+      <Image
+        class="h-[250px] object-cover object-top object-right-top w-full xl:h[350px]"
+        width="1920"
+        height="1080"
+        src={imageUrl}
+        alt="project-thumbnail"
+      />
     </a>
   </div>
-  <div class="bg-dark-900 p-3 md:p-5 h-[180px] xl:h-[210px]">
+  <div class="bg-dark-900 p-3 md:p-5 md:h-[180px] xl:h-[210px]">
     <div class="flex items-center justify-between">
       <h1 class="text-xl color-white xl:text-3xl">{title}</h1>
       <div>

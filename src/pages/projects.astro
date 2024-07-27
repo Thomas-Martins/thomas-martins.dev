@@ -20,9 +20,9 @@ const projects = await Astro.glob("../projects/*.json");
           projects.map((project) => (
             <div class="fade-in-up">
               <ProjectsCard
-                title={project.title}
+                title={t("link.home") === "Accueil" ? project.fr?.title : project.en?.title}
                 tags={project.tags}
-                description={project.description}
+                description={t("link.home") === "Accueil" ? project.fr?.description : project.en?.description}
                 imageUrl={project.imageUrl}
                 githubUrl={project.githubUrl}
                 url={project.url}

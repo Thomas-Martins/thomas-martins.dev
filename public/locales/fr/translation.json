@@ -6,16 +6,16 @@
   "job": {
     "title": "Développeur Web et Web Mobile.",
     "situation": "Je suis actuellement en Bachelor Concepteur Développeur d’Applications.",
-    "option1": "🚀 En quête d’opportunités, et de projets perso.",
-    "option2": "💻 Spécialisation en développement Front-End"
+    "option1": "🚀 En quête d’opportunités, et de projets innovants.",
+    "option2": "💻 Spécialisation en développement FullStack."
   },
   "intro": {
-    "label": "Salut! Je suis"
+    "label": "Bonjour! Je suis"
   },
   "about": {
     "title": "A propos de moi",
     "description": {
-      "part1": "Hey ! Je suis Thomas Martins, passionné par l’informatique et la technologie depuis toujours.",
+      "part1": "Je suis Thomas Martins, passionné par l’informatique et la technologie depuis toujours.",
       "part2": "J'ai eu la chance d'utiliser un ordinateur depuis mon plus jeune âge, ce qui a suscité ma passion pour la technologie.",
       "part3": "J’ai vraiment aimé créer des petits sites et blogs depuis le lycée.",
       "part4.1": "J'ai eu l'occasion de travailler sur de nombreux projets en utilisant diverses technologies et langages de programmation. Je suis passionné par le ",
@@ -32,7 +32,7 @@
   },
   "projects": {
     "title": "Mes Projets",
-    "description": "J'adore travailler sur des projets et m'entrainer, voici certains des projets sur lesquelles j'ai travaillés.",
+    "description": "J'adore travailler sur des projets et m'entrainer, voici certains des projets sur lesquels j'ai travaillé.",
     "section": {
       "title": "Mon travail",
       "description": "Voici quelques projets sur lesquels j'ai travaillé.",
@@ -45,14 +45,14 @@
   "contact": {
     "slogan": "Entrons en Contact.",
     "text1": "Je suis actuellement spécialisé dans le ",
-    "state": "développement Front-End",
-    "text2": "N'hésitez pas à me contacter et à discuter davantage de vos projets.",
+    "state": "développement Fullstack",
+    "text2": "N'hésitez pas à me contacter et nous pourrons discuter davantage de vos projets.",
     "cv": "Mon cv"
   },
   "seo": {
     "title": "Portfolio | Thomas Martins",
-    "description": "Voici le portfolio de Thomas Martins, développeur Web, spécialisé en développement Front-End. Jetez un oeil sur les projets sur lesquels il a travaillé",
-    "ogTitle": "Le site où je parle de moi, de ma stack et des projets que j'ai faits.",
+    "description": "Voici le portfolio de Thomas Martins, développeur Web, spécialisé en développement FullStack. Jetez un oeil sur les projets sur lesquels il a travaillé",
+    "ogTitle": "Bienvenue sur mon site, vous pourrez apprendre à me connaitre, retrouvez mes projets et mes technologies préférés.",
     "ogImageAlt": "Photo de Thomas Martins, Développeur Web vivant en France."
   }
 }

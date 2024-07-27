@@ -4,35 +4,35 @@
     "projects": "Projects"
   },
   "job": {
-    "title": "Web and web mobile developer.",
+    "title": "Web and Web Mobile Developer.",
     "situation": "I am currently in a Bachelor's degree in Web Development.",
-    "option1": "🚀 Exploring opportunities and side projects.",
-    "option2": "💻 Currently specialing in Front-End Development."
+    "option1": "🚀 Exploring opportunities and innovative projects.",
+    "option2": "💻 Specialization in FullStack development."
   },
   "intro": {
-    "label": "Hey! I am"
+    "label": "Hi! I am"
   },
   "about": {
     "title": "About me",
     "description": {
-      "part1": "Hey! I'm Thomas Martins, passionate about computers and technology since forever.",
-      "part2": "I've been lucky enough to use a computer since I was young, which sparked my passion for technology.",
+      "part1": "I'm Thomas Martins, passionate about computers and technology since forever.",
+      "part2": "I had the chance to use a computer from a young age, which sparked my passion for technology.",
       "part3": "I really enjoyed creating small websites and blogs since high school.",
-      "part4.1": "I've had the chance to work on projects using various technologies and programming languages. I'm passionate about ",
-      "part4.2": ", and I particularly enjoy working on projects.",
+      "part4.1": "I have had the opportunity to work on many projects using various technologies and programming languages. I am passionate about ",
+      "part4.2": ", and I particularly enjoy working on",
       "keyword": {
         "dev": "Web Development"
       }
     },
     "aria-label": {
-      "dev": "I love building applications with JavaScript Frameworks (ReactJs, AdonisJs).",
+      "dev": "I love building Fullstack applications with frameworks (ReactJs, AdonisJs, Laravel).",
       "open-source": "I love the idea of contributing or make projects that can be useful to others."
     },
     "hobbies": "When I'm not coding, I playing games 🎮 with my friends, traveling ✈️, or watch somes series on Netflix 🍿!"
   },
   "projects": {
     "title": "My Projects",
-    "description": "I love working et practicing on projects, here are some of the projects I've worked on.",
+    "description": "I love working and practicing, here are some of the projects I've worked on.",
     "section": {
       "title": "My Work",
       "description": "Here's some of my projects that i have worked on.",
@@ -43,10 +43,16 @@
     "title": "Skills"
   },
   "contact": {
-    "slogan": "Keep In Touch.",
+    "slogan": "Let's Get in Touch.",
     "text1": "I am currently specializing in ",
-    "state": "Front-End development",
+    "state": "Fullstack development",
     "text2": "Feel free to contact me and talk more about your projects.",
-    "cv": "Resume"
+    "cv": "My CV"
+  },
+  "seo": {
+    "title": "Portfolio | Thomas Martins",
+    "description": "Here is the portfolio of Thomas Martins, a Web Developer, specialized in FullStack development. Take a look at the projects he has worked on.",
+    "ogTitle": "Welcome to my website, you can learn more about me, find my projects and my favorite technologies.",
+    "ogImageAlt": "Photo of Thomas Martins, Web Developer living in France."
   }
 }

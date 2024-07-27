@@ -9,8 +9,10 @@ const projects = await Astro.glob("../projects/*.json");
   <div class="mt-5 flex flex-col gap-10 md:grid md:grid-cols-2">
     <div>
       <div id="project-div" class="flex items-center">
-        <h1 class="section-label px-3 py-1.5 rounded-lg md:text-lg lg:text-2xl">🛠️ <span class="font-mono">{t("projects.section.title")}</span></h1>
-        <span class="label-decoration w-30 h-0.5 lg:w-50 xl:w-80"></span>
+        <h1 class="flex-none section-label px-3 py-1.5 rounded-lg md:text-lg lg:text-2xl">
+          🛠️ <span class="font-mono">{t("projects.section.title")}</span>
+        </h1>
+        <span class="label-decoration h-0.5 w-full"></span>
       </div>
       <div id="project-div" class="mt-5 lg:text-xl">
         <p class="mb-5">{t("projects.section.description")}</p>
@@ -21,9 +23,9 @@ const projects = await Astro.glob("../projects/*.json");
       projects.slice(0, 3).map((project, index) => (
         <div id="project-div" class={`${index == 1 ? "md:-mt-20" : ""}`}>
           <ProjectsCard
-            title={project.title}
+            title={t("link.home") === "Accueil" ? project.fr?.title : project.en?.title}
             tags={project.tags}
-            description={project.description}
+            description={t("link.home") === "Accueil" ? project.fr?.description : project.en?.description}
             imageUrl={project.imageUrl}
             githubUrl={project.githubUrl}
             url={project.url}

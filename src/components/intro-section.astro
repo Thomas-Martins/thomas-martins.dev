@@ -5,17 +5,17 @@ import Button from "./common/button.astro";
 
 <section id="intro-section" class="">
   <div class="mt-15 text-center fade-in-up md:text-left md:mt-30 lg:mt-50">
-    <h3 class="text-gradient text-3xl font-bold md:text-5xl">{t("intro.label")}</h3>
-    <h1 class="font-bold text-4xl md:text-7xl lg:text-8xl">Thomas Martins.</h1>
+    <h3 class="text-gradient text-2xl font-bold md:text-5xl">{t("intro.label")}</h3>
+    <h1 class="font-bold text-3xl md:text-7xl lg:text-8xl">Thomas Martins.</h1>
   </div>
-  <div class="text-center mt-6 text-2xl fade-in-up md:text-left">
+  <div class="mt-10 text-center text-2xl fade-in-up md:text-left">
     <h1 class="font-regular"><span class="font-bold !color-primary-500">{t("job.title")}</span> {t("job.situation")}</h1>
   </div>
   <div class="text-center mt-6 fade-in-up md:text-left lg:text-xl">
     <p>{t("job.option1")}</p>
     <p>{t("job.option2")}</p>
   </div>
-  <div class="mt-6 space-x-5 text-center fade-in-up md:text-left lg:text-lg">
+  <div class="grid -grid-cols-1 md:block items-baseline md:space-x-5 mt-6 space-y-5 fade-in-up md:text-left lg:text-lg">
     <Button label="Github" icon="ri-github-fill" url="https://github.com/Thomas-Martins" />
     <Button label="LinkedIn" icon="ri-linkedin-box-fill" url="https://www.linkedin.com/in/thomasmartinsdev/" />
     <Button label="Email" icon="ri-mail-send-line" url="mailto:thomas.martins1710@gmail.com" />

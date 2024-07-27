@@ -21,24 +21,40 @@ import ThemeToggle from "./theme-toggle.astro";
           <i class="ri-close-large-line"></i>
         </button>
       </div>
-      <div class="p-4 space-y-5 text-3xl text-center">
-        <a href="/" class="block">{t("link.home")}</a>
-        <a href="/projects" class="block">{t("link.projects")}</a>
-        {
-          t("link.home") === "Accueil" ? (
-            <a href="/en" class="block">
-              English
+      {
+        t("link.home") === "Accueil" ? (
+          <div class="p-4 space-y-5 text-3xl text-center">
+            <a href="/" class="block">
+              {t("link.home")}
             </a>
-          ) : (
+            <a href="/projects" class="block">
+              {t("link.projects")}
+            </a>
+            <a href="/en" class="block">
+              {" "}
+              English{" "}
+            </a>
+            <button id="toggleThemeButton" class="toggle-btn">
+              <i class="ri-moon-fill" />
+            </button>
+          </div>
+        ) : (
+          <div class="p-4 space-y-5 text-3xl text-center">
+            <a href="/en" class="block">
+              {t("link.home")}
+            </a>
+            <a href="/en/projects" class="block">
+              {t("link.projects")}
+            </a>
             <a href="/" class="block">
               Français
             </a>
-          )
-        }
-        <button id="toggleThemeButton" class="toggle-btn">
-          <i class="ri-moon-fill"></i>
-        </button>
-      </div>
+            <button id="toggleThemeButton" class="toggle-btn">
+              <i class="ri-moon-fill" />
+            </button>
+          </div>
+        )
+      }
     </div>
   </div>
 </nav>

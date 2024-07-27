@@ -1,8 +1,0 @@
-{
-  "title": "Youtube Png Card Generator",
-  "tags": ["React", "UnoCss"],
-  "description": "Youtube Png Generator is a tool for generate a youtube card from a youtube video URL, Idea proposed by Basti Ui and challenged by Benjamin Code.",
-  "imageUrl": "https://raw.githubusercontent.com/Thomas-Martins/youtube-png-card-generator/main/public/banner.png",
-  "githubUrl": "https://github.com/Thomas-Martins/youtube-png-card-generator",
-  "url": "https://youtube-card-generator.netlify.app/"
-}

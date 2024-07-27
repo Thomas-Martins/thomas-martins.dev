@@ -1,0 +1,14 @@
+{
+  "fr": {
+    "title": "Portfolio",
+    "description": "Mon portfolio personnel réalisée avec AstroJs!"
+  },
+  "en": {
+    "title": "Portfolio",
+    "description": "My personnal portfolio build with AstroJs!"
+  },
+  "tags": ["Astro", "UnoCss"],
+  "imageUrl": "https://raw.githubusercontent.com/Thomas-Martins/thomas-martins.dev/main/screenshot/screenshot.png",
+  "githubUrl": "https://github.com/Thomas-Martins/thomas-martins.dev",
+  "url": "https://thomas-martins.dev"
+}

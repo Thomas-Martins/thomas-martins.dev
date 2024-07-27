@@ -1,0 +1,13 @@
+{
+  "fr": {
+    "title": "QuickTalk",
+    "description": "QuickTalk est un projet personnel d'apprentissage que j'ai réalisé pour améliorer mes compétences en React et Laravel. Il s'agit d'une application de messagerie instantanée simple et intuitive."
+  },
+  "en": {
+    "title": "QuickTalk",
+    "description": "QuickTalk is a personal learning project that I built to enhance my skills in React and Laravel. It's a simple and intuitive instant messaging application."
+  },
+  "tags": ["React", "Laravel", "PostgreSQL"],
+  "imageUrl": "https://raw.githubusercontent.com/Thomas-Martins/ChatApp/main/screenshot/screenshot.png",
+  "githubUrl": "https://github.com/Thomas-Martins/ChatApp"
+}

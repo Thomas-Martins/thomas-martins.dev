@@ -1,0 +1,13 @@
+{
+  "fr": {
+    "title": "Gestion Garage",
+    "description": "En seulement une semaine, nous avons réussi à développer un tableau de bord innovant pour un garage automobile. Cet outil convivial permet à l'administrateur de gérer efficacement les employés, les interventions et plus encore."
+  },
+  "en": {
+    "title": "Garage Dashboard (school)",
+    "description": "In just one week, we successfully developed an innovative dashboard for an automotive garage. This user-friendly tool empowers the administrator to efficiently manage employees, interventions, and more."
+  },
+  "tags": ["Html", "Css", "Php", "Sql"],
+  "imageUrl": "https://github.com/Thomas-Martins/garage_ATTENDS_TDKD-school-/blob/main/screenshot/screenshot2.png?raw=true",
+  "githubUrl": "https://github.com/Thomas-Martins/garage_ATTENDS_TDKD-school-"
+}

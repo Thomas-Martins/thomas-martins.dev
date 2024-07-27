@@ -1,0 +1,14 @@
+{
+  "fr": {
+    "title": "Rick & Morty",
+    "description": "En tant que projet de test pour une entreprise, cette interface a été réalisée avec succès en seulement 4 jours. Elle interagit de manière transparente avec l'API Rick and Morty et a été construite en utilisant TanStack Query."
+  },
+  "en": {
+    "title": "Rick & Morty",
+    "description": "As a test project for a company, this interface was successfully completed in just 4 days. It seamlessly interacts with the Rick and Morty API and was built using TanStack Query."
+  },
+  "tags": ["React"],
+  "imageUrl": "https://raw.githubusercontent.com/Thomas-Martins/react-morty/main/screenshots/screenshot.png",
+  "githubUrl": "https://github.com/Thomas-Martins/react-morty",
+  "url": "https://react-morty-thomas.netlify.app/"
+}

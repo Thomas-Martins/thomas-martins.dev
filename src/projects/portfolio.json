@@ -1,8 +1,0 @@
-{
-  "title": "Portfolio",
-  "tags": ["Astro", "UnoCss"],
-  "description": "My personnal portfolio.",
-  "imageUrl": "https://raw.githubusercontent.com/Thomas-Martins/thomas-martins.dev/main/screenshot/screenshots/screenshot.png",
-  "githubUrl": "https://github.com/Thomas-Martins/thomas-martins.dev",
-  "url": "https://thomas-martins.dev"
-}

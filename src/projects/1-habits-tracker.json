@@ -1,0 +1,13 @@
+{
+  "fr": {
+    "title": "Habits Tracker",
+    "description": "Habits Tracker est une application de gestion des habitudes conviviale, conçue avec une interface entièrement open-source."
+  },
+  "en": {
+    "title": "Habits Tracker (in progress)",
+    "description": "Habits Tracker is a user-friendly habit management app, designed with a fully open-source interface."
+  },
+  "tags": ["React", "Adonis", "Postgresql"],
+  "imageUrl": "https://raw.githubusercontent.com/Thomas-Martins/habits-tracker/main/screenshot/screenshot.png",
+  "githubUrl": "https://github.com/Thomas-Martins/habits-tracker"
+}

@@ -1,0 +1,19 @@
+---
+import { t } from "i18next";
+import ThemeToggle from "./theme-toggle.astro";
+---
+
+<nav class="hidden md:flex items-center justify-between p-4 relative animate-fade-in-down animate-duration-400 md:p-8 2xl:p-12">
+  <div>
+    <h1 class="font-mono font-bold text-3xl md:text-5xl logo-color">&#60;<span class="font-mono">TM</span>/&#62;</h1>
+  </div>
+  <!-- Version tablet, desktop -->
+  <div>
+    <div class="space-x-3 text-sm 2xl:text-xl">
+      <a href="/">{t("link.home")}</a>
+      <a href="/projects">{t("link.projects")}</a>
+      {t("link.home") === "Accueil" ? <a href="/en">| EN |</a> : <a href="/">| FR |</a>}
+      <ThemeToggle />
+    </div>
+  </div>
+</nav>

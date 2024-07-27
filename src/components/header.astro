@@ -1,32 +1,12 @@
 ---
-import { t } from "i18next";
-import ThemeToggle from "./common/theme-toggle.astro";
+import DesktopMenu from "./common/desktop-menu.astro";
+import MobileMenu from "./common/mobile-menu.astro";
 ---
 
 <header id="header" class="w-full">
   <div class="absolute -z-10 top-0 left-0">
     <img class="w-screen h-auto svg-filter" src="https://svgsilh.com/svg/746402.svg" alt="background-svg" />
   </div>
-  <nav class="flex items-center justify-between p-4 relative animate-fade-in-down animate-duration-400 md:p-8 2xl:p-12">
-    <div>
-      <h1 class="font-mono font-bold text-3xl md:text-5xl logo-color">&#60;<span class="font-mono">TM</span>/&#62;</h1>
-    </div>
-    {
-      t("link.home") === "Accueil" ? (
-        <div class="space-x-3 text-sm 2xl:text-xl">
-          <a href="/">{t("link.home")}</a>
-          <a href="/projects">{t("link.projects")}</a>
-          <a href="/en">| EN |</a>
-          <ThemeToggle />
-        </div>
-      ) : (
-        <div class="space-x-3 text-sm 2xl:text-xl">
-          <a href="/en">{t("link.home")}</a>
-          <a href="/en/projects">{t("link.projects")}</a>
-          <a href="/">| FR |</a>
-          <ThemeToggle />
-        </div>
-      )
-    }
-  </nav>
+  <DesktopMenu />
+  <MobileMenu />
 </header>

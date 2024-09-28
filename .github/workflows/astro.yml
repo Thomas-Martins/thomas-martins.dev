@@ -77,6 +77,16 @@ jobs:
         with:
           path: ${{ env.BUILD_PATH }}/dist
 
+      # Send Discord notification on successful build
+      - name: Notify Discord on success
+        if: success()
+        run: |
+          curl -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -X POST \
+          -d "{\"content\": \"🚀 Personal Portfolio Build succeeded!\"}" \
+          https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID }}/messages
+
   deploy:
     environment:
       name: github-pages
@@ -88,3 +98,22 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      # Send Discord notification on successful deployment
+      - name: Notify Discord on successful deployment
+        if: success()
+        run: |
+          curl -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -X POST \
+          -d "{\"content\": \"🎉 Deployment succeeded! View your site here: ${{ steps.deployment.outputs.page_url }}\"}" \
+          https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID }}/messages
+
+      # Send Discord notification on deployment failure
+      - name: Notify Discord on deployment failure
+        if: failure()
+        run: |
+          curl -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -X POST \
+          -d "{\"content\": \"❌ Deployment failed for the Astro site.\"}" \
+          https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID }}/messages

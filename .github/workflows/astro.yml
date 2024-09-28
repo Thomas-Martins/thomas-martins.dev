@@ -84,7 +84,7 @@ jobs:
           curl -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
           -H "Content-Type: application/json" \
           -X POST \
-          -d "{\"content\": \"✅ Personal Portfolio Build succeeded!\"}" \
+          -d "{\"content\": \"Build for : "${{ github.event.head_commit.message }}" on Personal Portfolio succeeded ✅\"}" \
           https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID }}/messages
       # Send Discord notification on successful build
       - name: Notify Discord on build failure
@@ -93,7 +93,7 @@ jobs:
           curl -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
           -H "Content-Type: application/json" \
           -X POST \
-          -d "{\"content\": \"❌ Personal Portfolio Build failed!\"}" \
+          -d "{\"content\": \"Build for : "${{ github.event.head_commit.message }}" on Personal Portfolio failed ❌\"}" \
           https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID }}/messages
 
   deploy:
@@ -114,7 +114,7 @@ jobs:
           curl -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
           -H "Content-Type: application/json" \
           -X POST \
-          -d "{\"content\": \"🎉 Deployment succeeded! View your site here: ${{ steps.deployment.outputs.page_url }}\"}" \
+          -d "{\"content\": \"🎉 Deployment on production succeeded! View your site here: ${{ steps.deployment.outputs.page_url }}\"}" \
           https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID }}/messages
 
       # Send Discord notification on deployment failure
@@ -124,5 +124,5 @@ jobs:
           curl -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
           -H "Content-Type: application/json" \
           -X POST \
-          -d "{\"content\": \"❌ Deployment failed for the Astro site.\"}" \
+          -d "{\"content\": \"❌ Deployment on production failed for the Astro site.\"}" \
           https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID }}/messages

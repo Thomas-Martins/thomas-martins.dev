@@ -84,7 +84,7 @@ jobs:
           curl -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
           -H "Content-Type: application/json" \
           -X POST \
-          -d "{\"content\": \"Build for : "${{ github.event.head_commit.message }}" on Personal Portfolio succeeded ✅\"}" \
+          -d "{\"content\": \"Build for : '${{ github.event.head_commit.message }}' on Personal Portfolio succeeded ✅\"}" \
           https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID }}/messages
       # Send Discord notification on failed build
       - name: Notify Discord on build failure
@@ -93,7 +93,7 @@ jobs:
           curl -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
           -H "Content-Type: application/json" \
           -X POST \
-          -d "{\"content\": \"Build for : "${{ github.event.head_commit.message }}" on Personal Portfolio failed ❌\"}" \
+          -d "{\"content\": \"Build for : '${{ github.event.head_commit.message }}' on Personal Portfolio failed ❌\"}" \
           https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID }}/messages
 
   deploy:

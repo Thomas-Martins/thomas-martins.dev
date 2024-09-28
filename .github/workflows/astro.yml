@@ -86,7 +86,7 @@ jobs:
           -X POST \
           -d "{\"content\": \"Build for : "${{ github.event.head_commit.message }}" on Personal Portfolio succeeded ✅\"}" \
           https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID }}/messages
-      # Send Discord notification on successful build
+      # Send Discord notification on failed build
       - name: Notify Discord on build failure
         if: failure()
         run: |

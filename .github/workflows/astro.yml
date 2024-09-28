@@ -78,13 +78,22 @@ jobs:
           path: ${{ env.BUILD_PATH }}/dist
 
       # Send Discord notification on successful build
-      - name: Notify Discord on success
+      - name: Notify Discord on success build
         if: success()
         run: |
           curl -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
           -H "Content-Type: application/json" \
           -X POST \
-          -d "{\"content\": \"🚀 Personal Portfolio Build succeeded!\"}" \
+          -d "{\"content\": \"✅ Personal Portfolio Build succeeded!\"}" \
+          https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID }}/messages
+      # Send Discord notification on successful build
+      - name: Notify Discord on build failure
+        if: failure()
+        run: |
+          curl -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -X POST \
+          -d "{\"content\": \"❌ Personal Portfolio Build failed!\"}" \
           https://discord.com/api/v9/channels/${{ secrets.DISCORD_CHANNEL_ID }}/messages
 
   deploy:
